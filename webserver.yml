@@ -11,4 +11,7 @@
       
     - name: Starting webserver services
       service: name=httpd state=started
+
+    - name: Install Telnet
+      yum: name=telnet state=present
 ...
